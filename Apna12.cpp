@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+// bool isPowerof2(int n)
+// {
+//     return (n && !(n & n - 1));
+// }
+  void subset(int arr[] , int n){
+      for(int i=0;i<(1<<n);i++){
+          for(int j=0;j<n;j++){
+              if( i & (1<<j)){
+                   cout<<arr[j]<<" ";
+              }
+              
+          }cout<<endl;
+      }
+  }
+
+    int main()
+    // {
+
+    //     //cout << isPowerof2(16);
+    //     cout<<numberofones(19);
+    //     return 0;
+    // }
+    // //write a program to count the number og ones in binary reprsentation of a number 
+
+      {
+    int arr[4]={1,2,3,4};
+    subset(arr, 4);
+    return 0;
+      }
